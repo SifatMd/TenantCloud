@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:id="@+id/imageView"
+        android:padding="5dp"
+        android:src="@drawable/house" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="228dp"
+        android:padding="5dp"
+        android:layout_height="110dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="5dp"
+            android:text="Flat #"
+            android:id="@+id/flatno"
+            android:layout_gravity="left"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="5dp"
+            android:text="Road"
+            android:id="@+id/flataddress"
+            android:layout_gravity="left"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="96dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rating"
+
+                android:id="@+id/rating"
+                android:layout_gravity="left"
+                android:gravity="top|left"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000" />
+
+
+
+            <RatingBar
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:scaleX=".6"
+                android:rating="0.5"
+                android:paddingTop="7dp"
+                android:paddingLeft="5dp"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:max="5"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:id="@+id/housecondition" />
+</LinearLayout>
